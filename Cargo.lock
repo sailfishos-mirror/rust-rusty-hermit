@@ -2029,10 +2029,11 @@ dependencies = [
 
 [[package]]
 name = "rftrace"
-version = "0.2.3"
+version = "0.3.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af7e6cf0e8757e15188f80c86dfd705a9cf516dbf737c2d9268e423177d88a39"
+checksum = "59339fbb5fec7491f0ea581d4a4925693f60c2660aef55ba48e565f0980baddd"
 dependencies = [
+ "cc",
  "home",
  "llvm-tools",
 ]
