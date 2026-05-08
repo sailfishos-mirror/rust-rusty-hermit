@@ -95,10 +95,6 @@ impl KernelSrc {
 			.arg("--target-dir")
 			.arg(&target_dir);
 
-		if has_feature("randomize-layout") {
-			cargo.arg("--randomize-layout");
-		}
-
 		// Control enabled features via this crate's features
 		cargo.arg("--no-default-features");
 		forward_features(
@@ -132,6 +128,7 @@ impl KernelSrc {
 				"alloc-stats",
 				"instrument-mcount",
 				"kernel-stack",
+				"randomize-layout",
 				"shell",
 				"strace",
 				"document-features",

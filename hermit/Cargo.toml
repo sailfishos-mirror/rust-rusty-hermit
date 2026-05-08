@@ -28,9 +28,6 @@ common-os = ["hermit-abi", "generic_once_cell", "libm", "spinning_top", "take-st
 ## Links against libc.a.
 libc = []
 
-## Builds the kernel with `--randomize-layout`.
-randomize-layout = []
-
 #! ### Kernel Features
 #!
 #! For details, see the kernel [docs].
@@ -63,6 +60,7 @@ idle-poll = []
 alloc-stats = []
 instrument-mcount = []
 kernel-stack = []
+randomize-layout = []
 shell = []
 strace = []
 document-features = []
