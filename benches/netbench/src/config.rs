@@ -51,6 +51,6 @@ pub struct Config {
 
 impl Config {
 	pub fn address_and_port(&self) -> String {
-		format!("{}:{}", &self.address, &self.port)
+		format!("{}:{}", self.address, self.port)
 	}
 }
