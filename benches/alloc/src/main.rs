@@ -29,8 +29,6 @@ SOFTWARE.
  * The original code is part of the crate `talc`.
  */
 
-#![feature(slice_ptr_get)]
-
 use std::alloc::{alloc, dealloc, Layout};
 use std::time::Instant;
 
