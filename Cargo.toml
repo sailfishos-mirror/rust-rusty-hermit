@@ -36,6 +36,10 @@ members = [
 socket2 = { git = "https://github.com/hermit-os/socket2.git", branch = "v0.5.x" }
 tokio = { git = "https://github.com/hermit-os/tokio.git", branch = "v/tokio-1.45.0" }
 
-[profile.profiling]
+[profile.dist]
 inherits = "release"
+codegen-units = 1
+
+[profile.profiling]
+inherits = "dist"
 debug = "line-tables-only"

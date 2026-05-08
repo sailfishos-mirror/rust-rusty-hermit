@@ -1,4 +1,4 @@
-#![feature(thread_local)]
+#![cfg_attr(target_os = "hermit", feature(thread_local))]
 
 use std::ffi::OsString;
 use std::time::Instant;
