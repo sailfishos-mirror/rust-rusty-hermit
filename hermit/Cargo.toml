@@ -24,12 +24,12 @@ talc = { version = "4.4", default-features = false, features = ["lock_api"], opt
 [features]
 default = []
 common-os = [
-	"hermit-abi",
-	"generic_once_cell",
-	"libm",
-	"spinning_top",
-	"take-static",
-	"talc",
+	"dep:hermit-abi",
+	"dep:generic_once_cell",
+	"dep:libm",
+	"dep:spinning_top",
+	"dep:take-static",
+	"dep:talc",
 ]
 
 ## Links against libc.a.
