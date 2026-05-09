@@ -82,11 +82,6 @@ nostd = []
 trace = []
 vsock = []
 
-#! ### Deprecated Features
-
-instrument = ["instrument-mcount"]
-log-target = []
-
 [build-dependencies]
 cc = "1"
 home = "0.5"
